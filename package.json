@@ -1,14 +1,11 @@
 {
   "name": "jest-learning",
   "version": "1.0.0",
-  "description": "Exercices et pratiques autour du testing avec Jest",
-  "main": "index.js",
+  "description": "Learning JavaScript testing with Jest through practical examples",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "jest": "^30.2.0"
   }
