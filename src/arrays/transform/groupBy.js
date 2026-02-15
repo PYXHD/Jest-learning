@@ -1,6 +1,6 @@
 function groupBy(array, fn) {
     if (!Array.isArray(array)) {
-        throw new TypeError("array must be an array")
+        throw new TypeError("Array must be an array")
     }
     if (typeof fn !== "function") {
         throw new TypeError("fn must be a function")
