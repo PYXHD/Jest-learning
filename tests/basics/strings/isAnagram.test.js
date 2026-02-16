@@ -5,7 +5,7 @@ describe("isAnagram()", () => {
         test.each([
             ["été", "ete", true],
             ["Maire", "Aimer", true],
-            ["gare-du-nord", "drogue d'anar", true],
+            ["chien-noir", "noir chien", true],
             ["relire", "relier!", true],
             ["Dormitory", "Dirty room!!", true]
         ])("isAnagram(%p, %p) -> %p", (input1, input2, expected) => {
