@@ -1,12 +1,17 @@
 import { fetchUserName } from "../../src/async/fetchUserName";
 
+beforeEach(() => jest.useFakeTimers());
+afterEach(() => jest.useRealTimers());
+
 describe("fetchUserName()", () => {
     describe("normal cases", () => {
         test.each([
             [1, "Alice"],
             [2, "Bob"]
         ])("fetchUserName(%p) -> %s", async (input, expected) => {
-            const result = await fetchUserName(input);
+            const promise = fetchUserName(input)
+            jest.runAllTimers();
+            const result = await promise;
             expect(result).toBe(expected)
         })
     })
@@ -27,7 +32,9 @@ describe("fetchUserName()", () => {
         })
 
         test("throws if invalid id", async () => {
-            await expect(fetchUserName(4))
+            const promise = fetchUserName(4);
+            jest.runAllTimers();
+            await expect(promise)
                 .rejects
                 .toThrow("User not found")
         })

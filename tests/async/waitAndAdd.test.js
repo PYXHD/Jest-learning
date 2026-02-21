@@ -1,9 +1,14 @@
 import { waitAndAdd } from "../../src/async/waitAndAdd";
 
+beforeEach(() => jest.useFakeTimers());
+afterEach(() => jest.useRealTimers());
+
 describe("waitAndAdd()", () => {
     describe("normal cases", () => {
         test("add two numbers", async () => {
-            const result = await waitAndAdd(2, 3);
+            const promise = waitAndAdd(2, 3);
+            jest.runAllTimers();
+            const result = await promise;
             expect(result).toBe(5)
         })
     })

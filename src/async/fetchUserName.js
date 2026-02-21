@@ -3,7 +3,7 @@ async function fetchUserName(id) {
         throw new TypeError("id must be a positive number")
     }
 
-    return new Promise((resolve, reject) => {
+    return await new Promise((resolve, reject) => {
         setTimeout(() => {
             switch (id) {
                 case 1:
