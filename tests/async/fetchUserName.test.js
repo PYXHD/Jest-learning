@@ -1,4 +1,5 @@
 import { fetchUserName } from "../../src/async/fetchUserName";
+import { jest } from '@jest/globals';
 
 beforeEach(() => jest.useFakeTimers());
 afterEach(() => jest.useRealTimers());

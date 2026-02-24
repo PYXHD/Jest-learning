@@ -1,4 +1,5 @@
 import { waitAndAdd } from "../../src/async/waitAndAdd";
+import { jest } from '@jest/globals';
 
 beforeEach(() => jest.useFakeTimers());
 afterEach(() => jest.useRealTimers());
