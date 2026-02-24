@@ -1,4 +1,4 @@
-import { mean } from "../../../src/basics/stats/mean";
+import { mean } from "../../src/stats/mean";
 
 describe("mean()", () => {
     describe("normal cases", () => {
@@ -27,6 +27,7 @@ describe("mean()", () => {
         test.each([
             "banana",
             12,
+            {},
             undefined,
             null
         ])("throws if argument is %p", (input) => {

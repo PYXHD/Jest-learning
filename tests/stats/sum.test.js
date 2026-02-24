@@ -1,4 +1,4 @@
-import { sum } from "../../../src/arrays/stats/sum";
+import { sum } from "../../src/stats/sum";
 
 describe("sum()", () => {
 

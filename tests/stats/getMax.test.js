@@ -1,4 +1,4 @@
-import { getMax } from "../../../src/arrays/stats/getMax";
+import { getMax } from "../../src/stats/getMax";
 
 describe("getMax()", () => {
 
