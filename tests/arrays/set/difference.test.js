@@ -14,7 +14,6 @@ describe("difference()", () => {
 
     describe("edge cases", () => {
         test.each([
-
             [[], [], []],
             [[1, 2], [], [1, 2]],
             [[], [1, 2], []]
