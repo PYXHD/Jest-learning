@@ -12,7 +12,7 @@ describe("symmetricDifference()", () => {
         })
     })
 
-    describe("normal cases", () => {
+    describe("edge cases", () => {
         test.each([
             [[], [], []],
             [[1, 2], [1, 2], []],
@@ -24,7 +24,7 @@ describe("symmetricDifference()", () => {
         })
     })
 
-    describe("normal cases", () => {
+    describe("error cases", () => {
         test.each([
             [[1, 2], "banana"],
             [[1, 2], 12],
