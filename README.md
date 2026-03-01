@@ -2,7 +2,7 @@
 
 Exercices et pratiques autour du testing avec Jest
 
-🎯 Objectif
+## 🎯 Objectif
 
 Approfondir la compréhension :
 
@@ -12,7 +12,7 @@ Approfondir la compréhension :
 - des mocks
 - des bonnes pratiques d’écriture de tests
 
-📂 Organisation
+## 📂 Organisation
 
 Les dossiers suivent ma progression :
 
@@ -21,7 +21,7 @@ Les dossiers suivent ma progression :
 
 Ce repository est volontairement évolutif et documente mon apprentissage.
 
-🛠 Stack
+## 🛠 Stack
 
 - javaScript
 - jest
