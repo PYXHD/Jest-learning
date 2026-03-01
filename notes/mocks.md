@@ -1,3 +1,4 @@
+//////////////////////////////////
 Fonction / jest.fn()
 
 -> créer une fausse fonction contrôlable
