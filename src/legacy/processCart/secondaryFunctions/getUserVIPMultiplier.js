@@ -1,8 +1,5 @@
 function getUserVIPMultiplier(user) {
-    if (user.isVIP) {
-        return 0.9
-    }
-    return 1;
+    return user?.isVIP ? 0.9 : 1;
 }
 
 export {
