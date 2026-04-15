@@ -5,4 +5,6 @@ function getUserVIPMultiplier(user) {
     return 1;
 }
 
-export default getUserVIPMultiplier;
+export {
+    getUserVIPMultiplier
+};

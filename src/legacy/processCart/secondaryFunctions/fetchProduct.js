@@ -9,6 +9,8 @@ async function fetchProduct(id) {
     return product;
 }
 
-export default fetchProduct;
+export {
+    fetchProduct
+};
 
 

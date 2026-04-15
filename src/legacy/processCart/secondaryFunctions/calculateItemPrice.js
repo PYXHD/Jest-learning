@@ -1,4 +1,5 @@
-import { getElectronicsTax, getUserVIPMultiplier } from "./getElectronicTax";
+import { getElectronicsTax } from "./getElectronicTax";
+import { getUserVIPMultiplier } from "./getUserVIPMultiplier";
 
 function calculateItemPrice(product, quantity, user) {
     const basePrice = product.price * quantity;
@@ -8,4 +9,6 @@ function calculateItemPrice(product, quantity, user) {
     return basePrice * tax * discount;
 }
 
-export default calculateItemPrice;
+export {
+    calculateItemPrice
+};

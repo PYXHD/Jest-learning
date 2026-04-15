@@ -6,4 +6,6 @@ function getElectronicsTax(product) {
     return 1;
 }
 
-export default getElectronicsTax;
+export {
+    getElectronicsTax
+};

@@ -4,4 +4,6 @@ function validateStock(product, quantity) {
     }
 }
 
-export default validateStock;
+export {
+    validateStock
+};

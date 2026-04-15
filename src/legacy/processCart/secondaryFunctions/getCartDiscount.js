@@ -5,4 +5,6 @@ function getCartDiscount(total) {
     return 0
 }
 
-export default getCartDiscount;
+export {
+    getCartDiscount
+};
