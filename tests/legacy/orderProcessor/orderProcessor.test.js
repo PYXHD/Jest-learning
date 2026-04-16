@@ -1,5 +1,5 @@
 import { jest } from "@jest/globals";
-import { processOrder } from "../../src/legacy/orderProcessor/orderProcessor";
+import { processOrder } from "../../../src/legacy/orderProcessor/orderProcessor";
 
 describe("processOrder()", () => {
     beforeEach(() => {
